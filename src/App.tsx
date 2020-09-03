@@ -6,6 +6,7 @@ import Menu from './Menu/Menu';
 import Game from './Game/Game';
 
 function App() {
+
     return (
         <div className="App bg-gray-900">
             <div className="container mx-auto">

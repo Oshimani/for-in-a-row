@@ -6,10 +6,10 @@ const Chip = (props: { belongsTo: number | null, children: any }) => {
 
     const renderChip = (belongsTo: number | null) => {
         switch (belongsTo) {
+            case 0:
+                return <div className="bg-yellow-600 w-full h-full animate__animated animate__backInDown"></div>
             case 1:
-                return <div className="bg-yellow-500 w-full h-full animate__animated animate__backInDown"></div>
-            case 2:
-                return <div className="bg-red-500 w-full h-full"></div>
+                return <div className="bg-red-600 w-full h-full animate__animated animate__backInDown"></div>
             default:
                 return
         }

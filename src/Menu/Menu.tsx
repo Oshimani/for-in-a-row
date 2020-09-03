@@ -7,14 +7,17 @@ const Menu = () => {
 
     // const [userName, setUserName] = useState<string>('')
 
-    const createGame = () => {
-        // do stuff
+    const createGame = (gameId?: string) => {
+        if (gameId === 'local') {
+            // create local game
+        } else {
+            // create online lobby
 
-        // create lobby
-        const gameId: string = "123ab";
+            gameId = '123-123-123'
 
+        }
         // enter lobby
-        navigate(`/game/${gameId}`);
+        navigate(`/game/${gameId}`)
     }
 
     return (
@@ -29,7 +32,8 @@ const Menu = () => {
             </section>
 
             <section>
-                <button onClick={() => createGame()} className="px-4 py-2 bg-red-600">Create Game</button>
+                <button onClick={() => createGame()} className="px-4 py-2 bg-red-600">Play online</button>
+                <button onClick={() => createGame('local')} className="px-4 py-2 bg-red-600">Play local</button>
             </section>
         </div>
     )
