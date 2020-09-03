@@ -1,0 +1,14 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+body {
+ @apply text-white;
+}
+
+
+input{
+    @apply text-black;
+}
