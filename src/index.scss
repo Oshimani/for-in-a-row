@@ -4,6 +4,8 @@
 
 @import "tailwindcss/utilities";
 
+@import '../node_modules/animate.css/animate.css';
+
 body {
  @apply text-white;
 }

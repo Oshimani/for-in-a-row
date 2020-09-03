@@ -1,4 +1,13 @@
-.board{
-    // grid-template-rows: 6;
-    // grid-template-columns: 7;
+.insertion-row {
+    .arrow {
+        &:hover {
+            @apply bg-gray-600
+        }
+
+        &:active {
+            @apply bg-gray-700
+        }
+    }
 }
+
+.board {}

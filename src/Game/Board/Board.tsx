@@ -62,12 +62,12 @@ const Board = () => {
     return (
 
         <div>
-            <section className="grid grid-cols-7">
+            <section className="insertion-row grid grid-cols-7">
                 {[1, 2, 3, 4, 5, 6, 7].map((x, i) => {
 
                     return (
                         <div key={i} onClick={() => { insertChip(i, 1) }}
-                            className=" m-2 p-2 rounded-full text-6xl bg-blue-300 h-32 w-32">
+                            className="arrow m-2 p-2 cursor-pointer rounded-full text-6xl h-32 w-32">
                                 <ArrowDownwardRoundedIcon fontSize="inherit"/>
                         </div>
                     )
